@@ -19,7 +19,15 @@
         <thucydides.version>0.9.268</thucydides.version>
         <jelastic.context>addressbook</jelastic.context>
     </properties>
-
+<reporting>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>2.7</version>
+        </plugin>
+    </plugins>
+</reporting>
 	<distributionManagement>
 		<snapshotRepository>
 			<id>${env.ART_ID}</id>
